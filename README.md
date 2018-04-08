@@ -21,3 +21,13 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h: \w$(/home/anze/local/bin/cemail) ▶ '
 fi
 ```
+
+The result is command prompt like this
+
+```
+anze@kosovel: ~ [-14746 +14838l] ▶ 
+```
+
+meaning that 14746 days have passed since my birth and I have some
+14800 left.
+
