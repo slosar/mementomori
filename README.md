@@ -25,7 +25,7 @@ fi
 The result is command prompt like this
 
 ```
-anze@kosovel: ~ [-14746 +14838l] ▶ 
+anze@kosovel: ~ [14747 <-> 14837] ▶ 
 ```
 
 meaning that 14746 days have passed since my birth and I have some

@@ -15,7 +15,7 @@ time_t secnow = time(NULL);
 int dayspassed = (int)((secnow-TIMEBIRTH)/(24*3600));
 int daystogo = (int)((TIMEDEATH-secnow)/(24*3600));
 
-printf ("[-%i +%il",dayspassed, daystogo);
+printf ("[%i <-> %i",dayspassed, daystogo);
 
 glob_t p;
 int res=glob(GLOB_STR, GLOB_NOSORT,
