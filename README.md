@@ -33,3 +33,9 @@ anze@kosovel: ~ [14747 <-> 14837] ▶
 meaning that 14746 days have passed since my birth and I have some
 ~14800 left.
 
+## Update in 2023
+
+I am now here:
+```
+anze@kosovel: ~ [16700] ❱❱ 
+```
