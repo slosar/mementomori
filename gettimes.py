@@ -4,6 +4,5 @@ import time
 def str2time(str):
     return time.mktime(time.strptime(str, "%d %b %Y"))
 
-print "#define TIMEBIRTH",str2time("23 Nov 1977")
-print "#define TIMEDEATH",str2time("23 Nov 2058")
+print ("#define TIMEBIRTH",str2time("23 Nov 1977"))
 
