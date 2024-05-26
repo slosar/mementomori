@@ -1,10 +1,10 @@
 /* defines */
 #define GLOB_STR "/var/spool/emailrelay/*content"
 #ifdef LAMPEDUSA
-#define FAN_DEV "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon6/fan1_input"
+#define FAN_DEV "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon5/fan1_input"
 #endif
 #ifdef REMLER
-#define FAN_DEV "/sys/class/hwmon/hwmon5/fan%d_input"
+#define FAN_DEV "/sys/class/hwmon/hwmon1/fan%d_input"
 #endif
 
 /* use gettimes.py for these */
@@ -49,13 +49,16 @@ if (file != NULL) {
    else
      fanSpeed_other+=fanSpeed;
  }
-char fanSpeed_gpu[128];
+ /*
+ char fanSpeed_gpu[128];
 FILE *gpuTempFile = popen("nvidia-settings -t -q GPUCurrentFanSpeedRPM", "r");
 if (gpuTempFile != NULL) {
   fgets(fanSpeed_gpu, sizeof(fanSpeed_gpu), gpuTempFile);
   pclose(gpuTempFile);
 }
  printf(" | %d RPM | %d RPM | %d RPM ", fanSpeed_cpu, fanSpeed_other, atoi(fanSpeed_gpu));
+ */
+  printf(" | %d RPM | %d RPM ", fanSpeed_cpu, fanSpeed_other);
 #endif
  
 
