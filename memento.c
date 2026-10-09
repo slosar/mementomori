@@ -4,7 +4,7 @@
 #define FAN_DEV "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon5/fan1_input"
 #endif
 #ifdef REMLER
-#define FAN_DEV "/sys/class/hwmon/hwmon1/fan%d_input"
+#define FAN_DEV "/sys/class/hwmon/hwmon2/fan%d_input"
 #endif
 
 /* use gettimes.py for these */
@@ -58,6 +58,7 @@ if (gpuTempFile != NULL) {
 }
  printf(" | %d RPM | %d RPM | %d RPM ", fanSpeed_cpu, fanSpeed_other, atoi(fanSpeed_gpu));
  */
+ 
   printf(" | %d RPM | %d RPM ", fanSpeed_cpu, fanSpeed_other);
 #endif
  

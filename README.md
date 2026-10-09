@@ -39,3 +39,12 @@ I am now here:
 ```
 anze@kosovel: ~ [16700] ❱❱ 
 ```
+
+
+## Update in 2026
+
+I now report in status line, together with fan speed
+```
+ 17852 | 956 RPM | 0 RPM  
+```
+
